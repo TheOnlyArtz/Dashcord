@@ -1,0 +1,25 @@
+{
+  "name": "dashcord",
+  "version": "0.0.1",
+  "description": "A simple example of using Discord's OAuth",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theonlyartz/dashcord.git"
+  },
+  "author": "TheOnlyArtz, Amit Katz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theonlyartz/dashcord/issues"
+  },
+  "homepage": "https://github.com/theonlyartz/dashcord#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "helmet": "^3.9.0",
+    "mz": "^2.7.0",
+    "snekfetch": "^3.6.1"
+  }
+}
