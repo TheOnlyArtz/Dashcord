@@ -1,0 +1,6 @@
+{
+  "scopes" : ["identify", "guilds"],
+  "clientID": "389086423191388160",
+  "clientSecret": "OogCxit0kkTp6-B-4PJBmP5MXb_Whpj6",
+  "redirect_uri": "http://localhost:3000/oauth/redirect"
+}
