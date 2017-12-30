@@ -1,13 +1,13 @@
 const jsonDB = require('node-json-db');
-const database = new jsonDB("users", true, true);
 
 class Manager {
   constructor() {
-
+    this.users = new jsonDB("users", true, true);
+    this.guilds = new jsonDB("guilds", true, true);
   }
 
   saveNewUser(payload) {
-    console.log('payload');
+    
   }
 }
 

@@ -18,10 +18,12 @@
   "homepage": "https://github.com/theonlyartz/dashcord#readme",
   "dependencies": {
     "express": "^4.16.2",
+    "express-session": "^1.15.6",
     "helmet": "^3.9.0",
     "mz": "^2.7.0",
     "node-json-db": "^0.7.3",
     "querystring": "^0.2.0",
-    "snekfetch": "^3.6.1"
+    "unirest": "^0.5.1",
+    "uuid": "^3.1.0"
   }
 }
