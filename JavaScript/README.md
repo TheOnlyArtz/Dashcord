@@ -15,6 +15,15 @@
 ##### Requirements
 Node: 8.x.x
 
+### config.json.example
+As you can see there's a file called `config.json.example`\n
+Lets go by the props one by one\n
+`scopes:` This is an Array of OAuth scopes [Available scopes](https://discordapp.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes)\n
+`dash_secret:` This is the cookie secret (Don't show it to anybody!!!) this secret should be cryptographically string! can be generated using [uuid](https://www.npmjs.com/package/uuid)\n
+`redirect_uri:` Where will the auth redirect you to\n
+`clientSecret:` You're [Discord](https://discordapp.com) app client secret
+`clientID:` You're [Discord](https://discordapp.com) app client ID
+
 ### How does it work?
 So first of all we are monitoring the user to Discord's Authorization login so we can get the access_token out of the user to access other types of data,\n
 Such as: `Which guilds the user is connected to`, `Overall user information`
