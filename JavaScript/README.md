@@ -25,15 +25,15 @@ Lets go by the props one by one<br>
 `clientID:` You're [Discord](https://discordapp.com) app client ID
 
 ### How does it work?
-So first of all we are monitoring the user to Discord's Authorization login so we can get the access_token out of the user to access other types of data,\n
+So first of all we are monitoring the user to Discord's Authorization login so we can get the access_token out of the user to access other types of data,<br>
 Such as: `Which guilds the user is connected to`, `Overall user information`
-After we've got the access_token, we are making some HTTP requests to take the: `Guilds`, `User information`\n
+After we've got the access_token, we are making some HTTP requests to take the: `Guilds`, `User information`<br>
 ```js
 req.session.auth = response['body'];
 req.session.user = user['body'];
 req.session.user.guilds = guilds['body'];
 ```
-After we got all of the data we needed, we store this information inside our MySQL database along to the cookie/session (to keep the user be logged)\n
+After we got all of the data we needed, we store this information inside our MySQL database along to the cookie/session (to keep the user be logged)<br>
 Then we can just monitor the user to dashboard which will showcase him his data.
 **Of course ou can change and design the dashboard to your needs!!!** This is just an example of how to get data!
 Happy "dashcording" everyone! *(Cringe as f_ck moment)*
