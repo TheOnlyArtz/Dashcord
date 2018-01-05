@@ -2,13 +2,11 @@ const express = require('express');
 const querystring = require('querystring')
 
 const config = require('../config.json');
-const DB = require('../Database/Manager.js');
 
 const {post, get} = require('unirest');
 const {clientID, scopes, redirect_uri, clientSecret} = config;
 
 const Router = new express.Router();
-const Manager = new DB;
 
 Router.get('/', function(req, res) {
   const authURI = `https://discordapp.com/api/oauth2/authorize?client_id=${clientID}&scope=${scopes.join('%20')}&permissions=${0}&redirect_uri=${encodeURIComponent(redirect_uri)}&response_type=code`
