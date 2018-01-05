@@ -16,12 +16,12 @@
 Node: 8.x.x
 
 ### config.json.example
-As you can see there's a file called `config.json.example`\n
-Lets go by the props one by one\n
-`scopes:` This is an Array of OAuth scopes [Available scopes](https://discordapp.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes)\n
-`dash_secret:` This is the cookie secret (Don't show it to anybody!!!) this secret should be cryptographically string! can be generated using [uuid](https://www.npmjs.com/package/uuid)\n
-`redirect_uri:` Where will the auth redirect you to\n
-`clientSecret:` You're [Discord](https://discordapp.com) app client secret
+As you can see there's a file called `config.json.example`<br>
+Lets go by the props one by one<br>
+`scopes:` This is an Array of OAuth scopes [Available scopes](https://discordapp.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes)<br>
+`dash_secret:` This is the cookie secret (Don't show it to anybody!!!) this secret should be cryptographically string! can be generated using<br> [uuid](https://www.npmjs.com/package/uuid)<br>
+`redirect_uri:` Where will the auth redirect you to<br>
+`clientSecret:` You're [Discord](https://discordapp.com) app client secret<br>
 `clientID:` You're [Discord](https://discordapp.com) app client ID
 
 ### How does it work?
