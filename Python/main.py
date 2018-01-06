@@ -15,5 +15,8 @@ def init():
         redirect_uri=str(parse.quote(data['redirect_uri'], safe='~()*!.\''))
         )
 
+    return "<a href={link}>Link your discord account</a>".format(link=str(authLink))
+
+
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=3000, debug=True)
