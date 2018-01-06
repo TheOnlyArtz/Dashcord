@@ -17,6 +17,10 @@ def init():
 
     return "<a href={link}>Link your discord account</a>".format(link=str(authLink))
 
+@app.errorhandler(404)
+def page_not_found(e):
+    print("not found!")
+    return "The page doesn\'t exist"
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=3000, debug=True)
