@@ -19,7 +19,6 @@ def init():
 
 @app.errorhandler(404)
 def page_not_found(e):
-    print("not found!")
     return "The page doesn\'t exist"
 
 if __name__ == '__main__':
